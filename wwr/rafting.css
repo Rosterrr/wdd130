@@ -1,0 +1,183 @@
+/* Coolors Palette URL: https://coolors.co/f5ffc6-b4e1ff-ab87ff-fface4-c1ff9b */
+
+:root {
+    --primary-bg-color: #f5ffc6; /* cream */
+    --secondary-bg-color: #b4e1ff; /* Uranian Blue */
+    --text-color: #ab87ff; /* Tropical Indigo */
+    --accent-color: #fface4; /* Lavander Pink */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; /* Body text */
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif; /* Headings */
+    color: var(--primary-color);
+}
+
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo, title, nav */
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto; /* Center the hero section */
+    text-align: center; /* Center the content */
+}
+
+.hero img {
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+.hero h1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.hero article {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 150px;
+    height: auto;
+}
+
+/* History section styles */
+.history {
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+}
+
+/* Adventures section styles */
+.adventures {
+    padding: 20px;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  }
+  
+  img {
+    max-width: 220px;
+    max-height: 150px;
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+
+.adventure-images {
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    flex-wrap: wrap; /* Wrap images if they overflow */
+}
+
+.adventure-images figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%; /* Use 100% to fill the figure */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between; /* Keep social links on the right */
+    align-items: center;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px; /* Space between social links */
+}
+
+.copyright-container {
+    flex: 1; /* Allow the copyright container to grow and take up space */
+    text-align: center; /* Center the copyright text */
+}
+
+
+
+
+
+.sociallinks img {
+    width: 30px; /* Size of social icons */
+    height: auto;
+}
+
+/* Additional styles */
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image stacking */
+section img {
+    display: block;  /* Make images stack vertically */
+    width: 15%;      /* Ensure the images fill the container width */
+    height: auto;    /* Maintain the aspect ratio of the images */
+    margin-bottom: 20px; /* Add spacing between the images */
+}
