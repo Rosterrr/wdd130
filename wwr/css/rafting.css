@@ -1,0 +1,154 @@
+/* Coolors Palette URL: https://coolors.co/f5ffc6-b4e1ff-ab87ff-fface4-c1ff9b */
+
+:root {
+    --primary-bg-color: #f5ffc6; /* Cream */
+    --secondary-bg-color: #b4e1ff; /* Uranian Blue */
+    --text-color: #ab87ff; /* Tropical Indigo */
+    --accent-color: #fface4; /* Lavender Pink */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-color);
+}
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+.hero h1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.hero article {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 150px;
+    height: auto;
+}
+
+/* History section styles */
+.history {
+    padding: 20px;
+    background-color: var(--secondary-bg-color);
+}
+
+/* Adventures section styles */
+.adventures {
+    padding: 20px;
+}
+
+.adventure-images {
+    display: block;
+}
+
+.adventure-images figure {
+    width: 100%;
+    margin: 20px auto; /* Center the figure element */
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
+    height: auto;
+}
+
+/* Figure styles */
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: 0 auto; /* Center the figure */
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: auto;
+}
+
+.copyright-container {
+    flex: 1;
+    text-align: center;
+}

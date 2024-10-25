@@ -1,0 +1,120 @@
+:root {
+    --primary-bg-color: #f5ffc6; /* cream */
+    --secondary-bg-color: #b4e1ff; /* Uranian Blue */
+    --text-color: #ab87ff; /* Tropical Indigo */
+    --accent-color: #fface4; /* Lavender Pink */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.hero img {
+    width: 90%;
+    height: auto;
+}
+
+/* Adventure Images Section */
+.adventure-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+}
+
+.adventure-images img {
+    width: 100%; /* Make images take full width of container */
+    max-width: 220px; /* Limit max size for consistency */
+    margin: 10px 0; /* Add spacing between images */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: auto;
+}
+
+.copyright-container {
+    flex: 1;
+    text-align: center;
+}
+
+/* Additional Styling for Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
